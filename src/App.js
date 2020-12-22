@@ -95,7 +95,12 @@ const App = () => {
             ))}
           </select>
         </div>
-        <button className='btn btn-primary'>เสกมา</button>
+        <button
+          disabled={meat === '' || type === ''}
+          className='btn btn-primary'
+        >
+          เสกมา
+        </button>
       </form>
       <div className='mt-3'>
         <h4>{result}</h4>
